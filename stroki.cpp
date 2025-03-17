@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int countVowels(const string& s) {
+int stroki(const string& s) {
     string v = "aeiouyAEIOUY";
     int c = 0;
     for (char ch : s) {
@@ -15,6 +15,6 @@ int main() {
     string str;
     cout << "Введите строку: ";
     getline(cin, str);
-    cout << "Количество гласных: " << countVowels(str) << endl;
+    cout << "Количество гласных: " << stroki(str) << endl;
     return 0;
 }
